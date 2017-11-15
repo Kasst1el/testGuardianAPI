@@ -1,0 +1,134 @@
+.news__h1 {
+	text-align: center;
+	margin: 20px 0 20px 0;
+}
+
+.error-message {
+	color: red !important;
+	width: 100%;
+	text-align: center;
+}
+
+.news__btn_refresh {
+	display: block;
+	margin: 0 auto 40px;
+	max-width: 200px;
+}
+
+.accordion__header {
+	padding: 20px 50px 20px 15px;
+	border: 1px solid #eee;
+	cursor: pointer;
+	position: relative;
+	font-size: 18px;
+	font-weight: 300;
+	transition: 0.3s ease-in-out;
+}
+
+.accordion__header i {
+	position: absolute;
+	right: 15px;
+	top: calc(50% - 14px);
+	z-index: 1;
+	transition: 0.4s ease-in-out;
+}
+
+.accordion__main {
+	display: none;
+	padding: 15px;
+	background-color: #f7f7f7;
+}
+
+.accordion__main img {
+	width: 100%;
+	height: auto;
+}
+
+.accordion__a {
+	text-decoration: underline;
+	display: inline-block;
+	width: 100%;
+}
+
+
+
+.pagination {
+	text-align: center;
+	margin: 40px 0;
+}
+
+
+.pagination__li {
+	text-align: center;
+	line-height: 40px;
+	height: 40px;
+}
+.pagination__li_active .accordion__header{
+	background-color: #3498db;
+	color: #ffffff;
+}
+.pagination__li_active i {
+	transform: rotate(180deg);
+}
+
+.pagination__page input.input-field{
+	width: 50px;
+	text-align: center;
+}
+
+.pagination__prev,
+.pagination__next {
+	width: 170px;
+}
+
+.pagination__next {
+	text-align: left;
+}
+.pagination__prev {
+	text-align: right;
+}
+.pagination__next i,
+.pagination__next span,
+.pagination__prev i,
+.pagination__prev span {
+	float: left;
+	line-height: 40px;
+	display: inline-block;
+}
+.pagination__next.disabled i,
+.pagination__next.disabled span,
+.pagination__prev.disabled i,
+.pagination__prev.disabled span {
+	color: #bbb;
+}
+
+.pagination__page {
+	line-height: 40px;
+	margin: 0 40px;
+}
+.pagination__page input,
+.pagination__page span {
+	float: left;
+	line-height: 40px;
+	height: 40px !important;
+	margin: 0 5px !important;
+}
+
+@media screen and (max-width: 768px){
+	.pagination__prev {
+		position: absolute;
+		left: 10px;
+		width: auto;
+	}
+	.pagination__next {
+		position: absolute;
+		right: 10px;
+		width: auto;
+	}
+	.pagination__page {
+		margin-top: 60px;
+	}
+	.news__h1 {
+		font-size: 44px;
+	}
+}
